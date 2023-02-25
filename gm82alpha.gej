@@ -1,0 +1,70 @@
+{
+	"name": "Game Maker 8.2 Alpha",
+	"folder": "gm82",
+	"version": "0.1",
+	"author": "renex, Floogle",
+	"date": "25/02/2023",
+	"license": "Free to use, also for commercial games.",
+	"description": "Part of the standard Game Maker 8.2 distribution. This extension package allows the game window to become transparent with an alpha value or chroma key. For advanced users only.",
+	"helpfile": "",
+	"hidden": false,
+	"dependencies": [],
+	"files": [
+		{
+			"filename": "gm82alpha.gml",
+			"origname": "C:\\Stuff\\github\\gm82alpha\\gm82alpha.gml",
+			"kind": 2,
+			"init": "",
+			"final": "",
+			"functions": [
+				{
+					"name": "window_set_alphablend",
+					"extname": "",
+					"calltype": 2,
+					"helpline": "window_set_alphablend(enable)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "window_set_chromakey",
+					"extname": "",
+					"calltype": 2,
+					"helpline": "window_set_chromakey(enable,color)",
+					"hidden": false,
+					"argtypes": [
+						2,
+						2
+					],
+					"returntype": 2
+				}
+			],
+			"constants": []
+		},
+		{
+			"filename": "gm82alpha.dll",
+			"origname": "build\\Release\\gm82alpha.dll",
+			"kind": 1,
+			"init": "",
+			"final": "",
+			"functions": [
+				{
+					"name": "__gm82alpha_setchromakey",
+					"extname": "",
+					"calltype": 12,
+					"helpline": "",
+					"hidden": false,
+					"argtypes": [
+						2,
+						2,
+						2
+					],
+					"returntype": 2
+				}
+			],
+			"constants": []
+		}
+	]
+}

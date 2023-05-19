@@ -3,12 +3,15 @@
 	"folder": "gm82",
 	"version": "0.1",
 	"author": "renex, Floogle",
-	"date": "25/02/2023",
+	"date": "19/05/2023",
 	"license": "Free to use, also for commercial games.",
 	"description": "Part of the standard Game Maker 8.2 distribution. This extension package allows the game window to become transparent with an alpha value or chroma key. For advanced users only.",
 	"helpfile": "",
 	"hidden": false,
-	"dependencies": [],
+	"dependencies": [
+		"Game Maker 8.2 Core",
+		"Game Maker 8.2 DirectX9"
+	],
 	"files": [
 		{
 			"filename": "gm82alpha.gml",
@@ -58,6 +61,18 @@
 					"hidden": false,
 					"argtypes": [
 						2,
+						2,
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "__gm82alpha_setcomposite",
+					"extname": "",
+					"calltype": 12,
+					"helpline": "",
+					"hidden": false,
+					"argtypes": [
 						2,
 						2
 					],

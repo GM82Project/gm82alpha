@@ -1,13 +1,13 @@
 #include <windows.h>
-//#include <dwmapi.h>
+#include <dwmapi.h>
 
-//#pragma comment(lib, "Dwmapi.lib")
+#pragma comment(lib, "Dwmapi.lib")
 
 #define GMREAL __declspec(dllexport) double __cdecl
 #define GMSTR __declspec(dllexport) char* __cdecl
 
-/*
-GMREAL __gm82core_setcomposite(double enable) {  
+GMREAL __gm82alpha_setcomposite(double whandle, double enable) {  
+    HWND window_handle = (HWND)(int)whandle;
     if (enable>=0.5) {    
         SetWindowLong(window_handle,GWL_EXSTYLE,GetWindowLong(window_handle,GWL_EXSTYLE) | WS_EX_COMPOSITED); 
         MARGINS margins = {-1,-1,-1,-1};
@@ -19,7 +19,7 @@ GMREAL __gm82core_setcomposite(double enable) {
     }
     return 0;
 }
-*/
+
 GMREAL __gm82alpha_setchromakey(double handle, double enable, double color) {  
     HWND window_handle = (HWND)(int)handle;
     

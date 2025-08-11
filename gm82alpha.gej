@@ -17,7 +17,7 @@
 			"filename": "gm82alpha.gml",
 			"origname": "gm82alpha.gml",
 			"kind": 2,
-			"init": "",
+			"init": "__gm82alpha_init",
 			"final": "",
 			"functions": [
 				{

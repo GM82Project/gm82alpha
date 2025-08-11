@@ -15,7 +15,7 @@ if (INSTALL_GEX)
 	add_custom_command(
 		TARGET gm82alpha
 		POST_BUILD
-		COMMAND py build_gex.py gm82alpha.gej
+		COMMAND py gm82gex.py gm82alpha.gej
 		WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
 		COMMENT "Building .gex"
 	)
@@ -23,7 +23,7 @@ else()
 	add_custom_command(
 		TARGET gm82alpha
 		POST_BUILD
-		COMMAND py build_gex.py gm82alpha.gej --noinstall
+		COMMAND py gm82gex.py gm82alpha.gej --noinstall
 		WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
 		COMMENT "Building .gex"
 	)

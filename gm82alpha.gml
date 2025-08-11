@@ -1,3 +1,7 @@
+#define __gm82alpha_init
+    globalvar gm82alpha_version;gm82alpha_version=010
+
+
 #define window_set_alphablend
     ///window_set_alphablend(enable)
     //enable: enable alpha blending

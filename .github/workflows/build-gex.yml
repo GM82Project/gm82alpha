@@ -14,6 +14,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    - name: Configure CMake
+      run: cmake -B ${{github.workspace}}/build -A Win32
+    - name: Build
+      run: cmake --build ${{github.workspace}}/build --config Release
     - name: Set up Python 3.10
       uses: actions/setup-python@v4
       with:
